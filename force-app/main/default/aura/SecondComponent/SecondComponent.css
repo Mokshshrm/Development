@@ -1,0 +1,23 @@
+.THIS {
+    /* width: 100% !important; */
+    height: 100vh;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.THIS .main__container__second__component {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.THIS .content_section {
+    flex: 1;
+    margin: 20px !important;
+}
+
+.THIS .recordContainer {
+    z-index: 1;
+    background-color: transparent;
+    height: 500px;
+}

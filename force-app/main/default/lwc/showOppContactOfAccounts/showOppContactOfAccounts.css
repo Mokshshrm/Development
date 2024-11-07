@@ -1,0 +1,11 @@
+:host {}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-item {
+    flex: 1;
+    margin: 0px 60px;
+}

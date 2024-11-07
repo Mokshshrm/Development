@@ -1,0 +1,32 @@
+<template>
+
+    <div class="header-progressbard">
+        <lightning-progress-indicator current-step={cmp_no} type="path" variant="base">
+            <lightning-progress-step label="Step 1" value="1"></lightning-progress-step>
+            <lightning-progress-step label="Step 2" value="2"></lightning-progress-step>
+            <lightning-progress-step label="Step 3" value="3"></lightning-progress-step>
+        </lightning-progress-indicator>
+    </div>
+    <div class="cmp-container">
+        <template if:true={cmp_no_1}>
+            <c-wizard-component-lwc></c-wizard-component-lwc>
+        </template>
+
+        <template if:true={cmp_no_2}>
+            <c-draft-your-email email-obj={emailObj}></c-draft-your-email>
+        </template>
+
+        <template if:true={cmp_no_3}>
+            <c-email-previewer email-obj={emailObj}></c-email-previewer>
+        </template>
+    </div>
+    <div class="wizard-container-footer">
+        <div class="wizard-prev-btn-container">
+            <lightning-button label="prev" data-name="prev" onclick={prevBtn}></lightning-button>
+        </div>
+        <div class="wizard-next-btn-container">
+            <lightning-button label="next" data-name="next" onclick={nextBtn}></lightning-button>
+        </div>
+    </div>
+
+</template>

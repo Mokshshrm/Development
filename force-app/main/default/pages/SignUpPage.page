@@ -1,0 +1,229 @@
+<apex:page >
+	<style>
+    	body{
+        	box-sizing: border-box;
+        	height:100vh;
+        	width:100vw;
+        	font-family: SalesforceSansRegular, Helvetica, Arial, sans-serif;
+        }
+        .main-container{
+        	box-sizing: border-box;
+        	width:100%;
+        	height:100%;
+        	background-image:url('https://www.salesforce.com/content/dam/web/en_us/www/images/form/general/form-full-bg-sales.jpg');
+        	background-size:cover;
+        	background-repeat:no-repeat;
+        	display:grid;
+  			grid-template-columns: repeat(2,1fr);
+        }
+        .left-container{
+        	box-sizing: border-box;
+        	margin-top:30px;
+        	width:auto;	
+        	height:100%;
+        	box-sizing:border-box;
+        	margin-left:15%;
+        }
+        .left-first{
+        	box-sizing:border-box;
+        	height:auto;
+        	width:auto;
+        	paddin:2px;
+        	display:flex;
+        	align-items:center;
+        	gap:10px;
+        }
+        .left-second{
+        	margin:20px 0px;
+        	margin-left:30px;
+        	display:flex;
+        	flex-direction:column;
+        	gap:20px;
+        	box-sizing: border-box;
+        }
+        .left-third{
+            background-image:url('https://www.salesforce.com/content/dam/web/en_in/www/images/form/freetrial-sales-inr-2000.png');
+        	width:100%;	
+        	height:350px;
+        	background-size:cover;
+        	background-repeat:no-repeat;
+        	background-position:center;
+            box-sizing: border-box;
+        	
+        }
+    	.left-heading{
+        	font-size:2.5rem;
+        	font-weight:bold;
+        	color:#032d60;
+        	box-sizing: border-box;
+        }
+        .signup-content{
+ 			box-sizing: border-box;
+        }
+        .content-heading{
+        	font-size:1.5rem;
+        	box-sizing: border-box;
+        }
+        .content-header{
+        	font-size:1rem;
+        	margin-bottom:15px;
+        	box-sizing: border-box;
+        }
+        .content-main{
+            box-sizing: border-box;
+        	display:flex;
+        	flex-direction:column;
+        	gap:2px;
+        	font-size:1rem;
+        	margin-left:20px;
+        }
+        .content-feedback{
+        	font-size:1.25rem;
+        	font-weight:bold;
+        	box-sizing: border-box;
+        }
+        
+		<!--- Right container -->        
+        
+        .right-container{
+        	box-sizing: border-box;
+        	heigth:auto;
+        	width:auto;
+        }
+        .form{
+        	width:auto;
+        	height:auto;
+        	margin-top:50px;
+        }
+        .form-container{
+        	background-color:rgb(245, 245, 245);
+        	width:450px;
+        	height:auto;
+        	padding:40px;
+        	margin:auto
+        }
+        
+        .form-header{
+        	display:flex;
+        	flex-direction:column;
+        	gap:20px;
+        }
+		.first-heading{
+        	font-size:1rem;	
+        	color:#032d60;
+        	font-weight:bold;
+        }
+        .second-heading{
+        	font-size:1rem;
+        }
+        .form-input-container{
+        	margin-top:30px;
+        	display:flex;
+        	flex-direction:column;
+        	gap:30px;
+         }
+        .input-field-container{
+         	display:flex;
+        	gap:20px;
+         }
+        input[type='text']{
+        	width:50%;
+        	flex:1;
+        	padding:5px 2px;
+        }
+        .term-condition-container{
+        	font-size:1rem;
+        	
+        }
+        .term-condition-link{
+        	color:#032d60;	
+        }
+        .form-footer-content{
+        	font-size:.8rem;
+        	margin-top:30px;
+        }
+        .btn{
+            width:100%;
+        	height:35px;
+        	background-color: #0070d2 !important;
+            color: white !important; 
+        	background-image:none !important;
+        	letter-spacing:.5px;
+        	font-weight:100 !important;
+        	font-size:1rem !important;
+        }
+        
+    </style>
+    <div class='main-container'>
+        <div class="left-container">
+            <div class="left-first">
+                <apex:image url="https://www.salesforce.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg" />
+                <span class='left-heading'>Start your free trial.</span>
+            </div>
+            <div class="left-second">
+    			<div class='content-heading'>No credit card required, no software to install.</div>
+                <div class='signup-content'>
+					<div class='content-header'>With your 30-day trial, you get</div>
+                    <div class='content-main'>
+                        <span>Pre-loaded data or upload your own</span>
+                        <span>Pre-configured processes, reports, and dashboards</span>
+                        <span>Guided experiences for sales reps, leaders, and administrators</span>
+                        <span>Online training and live onboarding webinars</span>
+                    </div>
+                </div>
+                <div class='content-feedback'>Questions? Talk to an expert: 1800-420-7332.</div>
+            </div>
+            <div class="left-third">
+            </div>
+    	</div>
+        <div class="right-container">
+        	<apex:form styleClass="form">
+                <div class='form-container'>
+                    
+                    <div class='form-header'>
+                        <div class='first-heading'>Sign up now to start your free sales trial.</div>
+                        <div class='second-heading'>Complete the form to start your free trial. Our team will be in touch to help you make the most of your trial</div>
+                    </div>
+                    
+                    <div class='form-input-container'>
+                        <div class='input-field-container'>
+							<apex:inputText label="firstname" />
+                        	<apex:inputText label="lastname" />
+                        </div>
+                         <div class='input-field-container'>
+							<apex:inputText label="email" />
+                        	<apex:inputText label="jobtitle" />
+                        </div>
+                         <div class='input-field-container'>
+							<apex:inputText label="company" />
+                        	<apex:inputText label="employee" />
+                        </div>
+                         <div class='input-field-container'>
+							<apex:inputText label="phone" />
+                        	<apex:inputText label="country" />
+                        </div>
+                    </div>
+                    
+                    <div style='margin-top:20px;'>
+                        <apex:inputCheckbox />
+                    	<apex:outputLabel styleClass="term-condition-container" > I agree to the <apex:outputLink styleClass="term-condition-link" value="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf"> Main Services Agreement.</apex:outputLink>  </apex:outputLabel>
+                    </div>
+                    
+                    <div>
+                        <div class='form-footer-content'>
+                            Your free trial may be provisioned on or migrated to Hyperforce, Salesforce's public cloud infrastructure.
+                        </div>
+                        <div class='form-footer-content'>
+                            By registering, you confirm that yu agree to the storing and processing of your personal data by Salesforce as described in the Privacy Statement.
+                        </div>
+                    </div>
+                    
+                    <div style='margin-top:20px'>
+                    	<apex:commandButton value="Start My Free Trial" id="signup-btn"/>
+                    </div>
+                </div>
+            </apex:form>
+        </div>
+    </div>	
+    
+</apex:page>

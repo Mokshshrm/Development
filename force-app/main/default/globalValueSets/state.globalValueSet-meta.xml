@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Andhra Pradesh (Amaravati)</fullName>
+        <default>false</default>
+        <label>Andhra Pradesh (Amaravati)</label>
+    </customValue>
+    <customValue>
+        <fullName>Arunachal Pradesh (Itanagar)</fullName>
+        <default>false</default>
+        <label>Arunachal Pradesh (Itanagar)</label>
+    </customValue>
+    <customValue>
+        <fullName>Assam (Dispur)</fullName>
+        <default>false</default>
+        <label>Assam (Dispur)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bihar (Patna)</fullName>
+        <default>false</default>
+        <label>Bihar (Patna)</label>
+    </customValue>
+    <customValue>
+        <fullName>Chhattisgarh (Raipur)</fullName>
+        <default>false</default>
+        <label>Chhattisgarh (Raipur)</label>
+    </customValue>
+    <customValue>
+        <fullName>Goa (Panaji)</fullName>
+        <default>false</default>
+        <label>Goa (Panaji)</label>
+    </customValue>
+    <customValue>
+        <fullName>Gujarat (Gandhinagar)</fullName>
+        <default>false</default>
+        <label>Gujarat (Gandhinagar)</label>
+    </customValue>
+    <customValue>
+        <fullName>Haryana (Chandigarh)</fullName>
+        <default>false</default>
+        <label>Haryana (Chandigarh)</label>
+    </customValue>
+    <customValue>
+        <fullName>Himachal Pradesh (Shimla)</fullName>
+        <default>false</default>
+        <label>Himachal Pradesh (Shimla)</label>
+    </customValue>
+    <customValue>
+        <fullName>Jharkhand (Ranchi)</fullName>
+        <default>false</default>
+        <label>Jharkhand (Ranchi)</label>
+    </customValue>
+    <customValue>
+        <fullName>Karnataka (Bangalore)</fullName>
+        <default>false</default>
+        <label>Karnataka (Bangalore)</label>
+    </customValue>
+    <customValue>
+        <fullName>Kerala (Thiruvananthapuram)</fullName>
+        <default>false</default>
+        <label>Kerala (Thiruvananthapuram)</label>
+    </customValue>
+    <customValue>
+        <fullName>Madhya Pradesh (Bhopal)</fullName>
+        <default>false</default>
+        <label>Madhya Pradesh (Bhopal)</label>
+    </customValue>
+    <customValue>
+        <fullName>Maharashtra (Mumbai)</fullName>
+        <default>false</default>
+        <label>Maharashtra (Mumbai)</label>
+    </customValue>
+    <customValue>
+        <fullName>Manipur (Imphal)</fullName>
+        <default>false</default>
+        <label>Manipur (Imphal)</label>
+    </customValue>
+    <customValue>
+        <fullName>Meghalaya (Shillong)</fullName>
+        <default>false</default>
+        <label>Meghalaya (Shillong)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mizoram (Aizawl)</fullName>
+        <default>false</default>
+        <label>Mizoram (Aizawl)</label>
+    </customValue>
+    <customValue>
+        <fullName>Nagaland (Kohima)</fullName>
+        <default>false</default>
+        <label>Nagaland (Kohima)</label>
+    </customValue>
+    <customValue>
+        <fullName>Odisha (Bhubaneshwar)</fullName>
+        <default>false</default>
+        <label>Odisha (Bhubaneshwar)</label>
+    </customValue>
+    <customValue>
+        <fullName>Punjab (Chandigarh)</fullName>
+        <default>false</default>
+        <label>Punjab (Chandigarh)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rajasthan (Jaipur)</fullName>
+        <default>false</default>
+        <label>Rajasthan (Jaipur)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sikkim (Gangtok)</fullName>
+        <default>false</default>
+        <label>Sikkim (Gangtok)</label>
+    </customValue>
+    <customValue>
+        <fullName>Tamil Nadu (Chennai)</fullName>
+        <default>false</default>
+        <label>Tamil Nadu (Chennai)</label>
+    </customValue>
+    <customValue>
+        <fullName>Telangana (Hyderabad)</fullName>
+        <default>false</default>
+        <label>Telangana (Hyderabad)</label>
+    </customValue>
+    <customValue>
+        <fullName>Tripura (Agartala)</fullName>
+        <default>false</default>
+        <label>Tripura (Agartala)</label>
+    </customValue>
+    <customValue>
+        <fullName>Uttarakhand (Dehradun)</fullName>
+        <default>false</default>
+        <label>Uttarakhand (Dehradun)</label>
+    </customValue>
+    <customValue>
+        <fullName>Uttar Pradesh (Lucknow)</fullName>
+        <default>false</default>
+        <label>Uttar Pradesh (Lucknow)</label>
+    </customValue>
+    <customValue>
+        <fullName>West Bengal (Kolkata)</fullName>
+        <default>false</default>
+        <label>West Bengal (Kolkata)</label>
+    </customValue>
+    <masterLabel>state</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

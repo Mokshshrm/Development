@@ -1,0 +1,15 @@
+.THIS {}
+
+.THIS .slds-modal__content {
+    height: 100%;
+}
+
+.THIS .slds-grid>div {
+    flex: 1 !important;
+}
+.THIS .slds-grid{
+    column-gap: 28rem;
+}
+.THIS .slds-p-horizontal_small {
+
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>state__c</fullName>
+    <label>state</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>state</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Andhra Pradesh (Amaravati)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Arunachal Pradesh (Itanagar)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Assam (Dispur)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Bihar (Patna)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Chhattisgarh (Raipur)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Goa (Panaji)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Gujarat (Gandhinagar)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Haryana (Chandigarh)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Himachal Pradesh (Shimla)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Jharkhand (Ranchi)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Karnataka (Bangalore)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Kerala (Thiruvananthapuram)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Madhya Pradesh (Bhopal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Maharashtra (Mumbai)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Manipur (Imphal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Meghalaya (Shillong)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Mizoram (Aizawl)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Nagaland (Kohima)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Odisha (Bhubaneshwar)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDIA</controllingFieldValue>
+            <valueName>Punjab (Chandigarh)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

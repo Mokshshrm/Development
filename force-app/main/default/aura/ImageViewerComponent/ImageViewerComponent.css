@@ -1,0 +1,18 @@
+.THIS {}
+
+.THIS .cmp-img-container-wrapper {
+    height: 500px;
+    width: 700px;
+    margin: auto;
+}
+
+.THIS .cmp-img-container {
+    width: 100%;
+    height: 100%;
+}
+
+.THIS .img-tag {
+    width: 100%;
+    height: 100%;
+
+}

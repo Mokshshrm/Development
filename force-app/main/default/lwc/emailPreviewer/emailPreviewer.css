@@ -1,0 +1,19 @@
+:host {}
+
+
+.email-draft-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.section-email {
+    flex: 1;
+}
+.format-text{
+    font-size: 1.125rem;
+}
+
+.custom-label {
+    font-size: 1.5rem;
+}

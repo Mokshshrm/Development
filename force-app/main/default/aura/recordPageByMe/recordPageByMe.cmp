@@ -1,0 +1,122 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,lightning:availableForFlowScreens,force:lightningQuickActionWithoutHeader" access="global" controller="ContactListController">
+     
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="contactList" type="List" default="[]" />
+    <aura:attribute name="opportunityList" type="List" default="[]" />
+    <aura:attribute name="render" type="Boolean"/>
+
+
+
+    <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+
+
+
+    <div class="sldx-box">
+
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_large">
+
+            <div class="slds-modal__container">
+
+                <button class="slds-button slds-button_icon slds-modal__close" onclick="{!c.closeModal}">
+                    <span class="slds-assistive-text">Cancel and close</span>
+                </button>   
+
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                   
+                    <lightning:layout>
+                        <lightning:layoutItem>
+                            <div class="contact-related-wrapper">
+
+                                <lightning:card title="Contacts">
+
+                                     <aura:set attribute="actions">
+                                                    <lightning:button label="New"/>
+                                                </aura:set>
+
+                                    <p class="slds-p-horizontal_small">
+                                        <aura:iteration  items="{!v.contactList}" var="item" >
+                                            
+                                            <lightning:card variant="standard" iconName="standard:contact" title="{!item.LastName}">
+                                                
+                                                <aura:set attribute="actions">
+                                                    <lightning:buttonMenu alternativeText="Show menu" menuAlignment="auto">
+                                                        <lightning:menuItem value="MenuItemOne" label="Menu Item One" />
+                                                        <lightning:menuItem value="MenuItemTwo" label="Menu Item Two" disabled="true" />
+                                                        <lightning:menuItem value="MenuItemThree" label="Menu Item Three" disabled="true" />
+                                                        <lightning:menuItem value="MenuItemFour" label="Menu Item Four" />
+                                                    </lightning:buttonMenu>
+                                                </aura:set>
+
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Name : </span>
+                                                </p>
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Title : </span>
+                                                </p>
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Email : </span>
+                                                </p>
+                                            </lightning:card>
+
+                                        </aura:iteration>
+                                    </p>
+
+                                </lightning:card>
+                            </div>
+
+                        </lightning:layoutItem>
+
+                        <lightning:layoutItem>
+                            <div class="opportunity-related-wrapper">
+                                <lightning:card title="Opportunity" >
+
+                                     <aura:set attribute="actions">
+                                                    <lightning:button label="New"/>
+                                                </aura:set>
+
+                                    <p class="slds-p-horizontal_small">
+                                        <aura:iteration items="{!v.opportunityList}" var="item" >
+                                            
+                                            <lightning:card iconName="standard:opportunity" title="{!item.Name}">
+                                                
+                                                <aura:set attribute="actions">
+                                                    <lightning:buttonMenu alternativeText="Show menu" menuAlignment="auto">
+                                                        <lightning:menuItem value="Edit" label="Edit" />
+                                                        <lightning:menuItem value="" label="" disabled="true" />
+                                                        <lightning:menuItem value="MenuItemThree" label="Menu Item Three" disabled="true" />
+                                                        <lightning:menuItem value="MenuItemFour" label="Menu Item Four" />
+                                                    </lightning:buttonMenu>
+                                                </aura:set>
+
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Name : </span>
+                                                </p>
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Title : </span>
+                                                </p>
+                                                <p class="slds-p-horizontal_small">
+                                                    <span>Email : </span>
+                                                </p>
+
+                                            </lightning:card>
+
+                                        </aura:iteration>
+                                    </p>
+
+                                </lightning:card>
+                            </div>
+                        </lightning:layoutItem>
+
+                    </lightning:layout>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+
+    </div>
+</aura:component>

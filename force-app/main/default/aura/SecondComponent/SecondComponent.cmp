@@ -1,0 +1,79 @@
+<aura:component
+  implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId"
+  controller="TwoSectionAccountContact"
+>
+  <aura:attribute name="accountId1" type="String" default="" />
+  <aura:attribute name="accountId2" type="String" default="" />
+
+  <aura:attribute name="contactMap1" type="Map" />
+  <aura:attribute name="contactMap2" type="Map" />
+
+  <aura:attribute name="contactData1" type="List" default="[]" />
+  <aura:attribute name="contactData2" type="List" default="[]" />
+
+  <aura:attribute name="cntfirst" type="String" default="" />
+
+  <aura:attribute name="cntsecond" type="Integer" default="0" />
+
+  <div class="main__container__second__component">
+    <div class="first__section content_section">
+      <div>
+        <lightning:input type="text" id="first" placeholder="search account" />
+        <lightning:button onclick="{!c.searchAcount1}" label="Search" />
+        <span>Contacts record : {!v.cntfirst} </span>
+      </div>
+
+      <!-- <c:SearchComponent cmpEvent="{!v.searchEventH1}" /> -->
+
+      <div
+        tmp="tmp"
+        class="recordContainer"
+        id="{!v.accountId1}"
+        ondrop="{!c.onDrop1}"
+        ondragover="{!c.dragOver}"
+      >
+        <aura:iteration var="item" items="{!v.contactData1}">
+          <aura:html
+            tag="div"
+            id="{!item.Id}"
+            class="card-component"
+            draggable="true"
+            ondragstart="{!c.dragStart}"
+          >
+            <lightning:card iconName="account" title="{!item.LastName}" />
+          </aura:html>
+        </aura:iteration>
+      </div>
+    </div>
+
+    <div class="second__section content_section">
+      <div>
+        <lightning:input type="text" id="second" placeholder="search account" />
+        <lightning:button onclick="{!c.searchAcount2}" label="Search" />
+        <span>Contacts record : {!v.cntsecond} </span>
+      </div>
+
+      <!-- <c:SearchComponent cmpEvent="{!v.searchEventH2}" /> -->
+
+      <div
+        tmp="tmp"
+        class="recordContainer"
+        id="{!v.accountId2}"
+        ondrop="{!c.onDrop2}"
+        ondragover="{!c.dragOver}"
+      >
+        <aura:iteration var="item" items="{!v.contactData2}">
+          <aura:html
+            tag="div"
+            id="{!item.Id}"
+            class="card-component"
+            draggable="true"
+            ondragstart="{!c.dragStart}"
+          >
+            <lightning:card iconName="account" title="{!item.LastName}" />
+          </aura:html>
+        </aura:iteration>
+      </div>
+    </div>
+  </div>
+</aura:component>

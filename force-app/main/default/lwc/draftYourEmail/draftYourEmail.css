@@ -1,0 +1,35 @@
+:host {
+    --lwc-c-formLabelFontSize: 1.5rem;
+}
+
+.email-draft-wrapper {
+    width: 100%;
+
+    margin: 50px 0px;
+}
+
+.slds-rich-text-editor {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.email-draft-container {
+    width: 60%;
+    margin: auto;
+}
+
+.custom-textarea {
+    --sds-c-textarea-sizing-min-height: 300px;
+    --sds-c-textarea-sizing-max-height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125rem;
+
+}
+
+.rich-text-container {
+    margin-top: 40px;
+}
+
+.c-slds-form-element__label {
+    --lwc-c-formLabelFontSize: 1.5rem;
+}

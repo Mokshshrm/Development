@@ -1,0 +1,68 @@
+<aura:component>
+  <aura:attribute name="eveData" type="Object" />
+
+  <aura:registerEvent name="sendEventToParent" type="c:FlowingDataFromWizard" />
+
+  <aura:method name="getData" access="Public" action="{!c.handleFormData}">
+    <aura:attribute name="isPrev" type="Boolean" />
+  </aura:method>
+
+  <lightning:recordEditForm objectApiName="Event">
+    <div class="form-title">New Event</div>
+    <div class="main-form-container">
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.eveData.subject}"
+          aura:id="input-subject"
+          type="text"
+          name="Subject"
+          label="Subject"
+          placeholder="Subject"
+          required="true"
+        />
+      </div>
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.eveData.startDate}"
+          aura:id="input-start-date"
+          type="date"
+          name="start-date"
+          label="Start Date"
+          required="true"
+        />
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.eveData.startTime}"
+          aura:id="input-start-time"
+          type="time"
+          name="start-time"
+          label="Start Time"
+          required="true"
+        />
+      </div>
+
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          validity="{#v.eveData.endDate}"
+          aura:id="input-end-date"
+          type="date"
+          name="end-date"
+          label="End Date"
+          required="true"
+        />
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          validity="{#v.eveData.endTime}"
+          aura:id="input-end-time"
+          type="time"
+          name="end-time"
+          label="End Time"
+          required="true"
+        />
+      </div>
+    </div>
+  </lightning:recordEditForm>
+</aura:component>

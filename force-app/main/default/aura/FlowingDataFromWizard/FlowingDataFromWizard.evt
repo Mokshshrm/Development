@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="SObject" type="String" />
+    <aura:attribute name="data" type="Object" />
+    <aura:attribute name="isPrev" type="Boolean" />
+</aura:event>

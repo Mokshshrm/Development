@@ -1,0 +1,54 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:attribute name="cmp_obj" type="Object" />
+	<aura:attribute name="render" type="Boolean" default="false" />
+	<!-- <aura:attribute name="istrue" type="Boolean" default="false" /> -->
+
+	<div class="slds-page-header">
+		<div class="slds-page-header__row">
+			<div class="slds-page-header__col-title">
+				<div class="slds-media">
+					<div class="slds-media__figure">
+						<span class="slds-icon_container" title="opportunity">
+							<lightning:icon iconName="action:preview" alternativeText="Preview" title="Preview" />
+						</span>
+					</div>
+					<div class="slds-media__body">
+						<div class="slds-page-header__name">
+							<div class="slds-page-header__name-title">
+								<h1>
+									<span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Home</span>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slds-box">
+		
+		<div class="input-section-div">
+			
+			<lightning:input aura:id="cmp-input-field1" type="text" name="imgUrl" label="img-url" placeholder="paste url"/>
+			<lightning:input aura:id="cmp-input-field2" type="text" name="description" label="description" placeholder="description" />
+			<lightning:input aura:id="cmp-input-field3" type="text" name="font-size" label="font-size" placeholder="font-size" />
+			<lightning:input aura:id="cmp-input-field4" type="text" name="font-color" label="font-color" placeholder="font-color" />
+			<lightning:input aura:id="cmp-input-field5" type="text" name="background-color" label="background-color" placeholder="background-color"/>
+			
+		</div>
+		<lightning:button name="Apply" label="Apply" onclick="{!c.updateObjectValues}" />
+	</div>
+	<div class="image-cmp-wrapper">
+		<!-- <aura:if isTrue="{!v.render}"> -->
+			<c:ImageViewerComponent cssObj="{!v.cmp_obj}" />
+			<!-- <aura:set attribute="else">
+				<c:ImageViewerComponent cssObj="{!v.cmp_obj}" />
+			</aura:set> -->
+		<!-- </aura:if> -->
+	</div>
+
+</aura:component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EACSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoPopulateGoogleMeetLinks>true</autoPopulateGoogleMeetLinks>
+    <automatedEmailFilter>false</automatedEmailFilter>
+    <dSThresholdNotification>true</dSThresholdNotification>
+    <enableActivityAnalyticsPref>false</enableActivityAnalyticsPref>
+    <enableActivityCapture>true</enableActivityCapture>
+    <enableActivitySyncEngine>true</enableActivitySyncEngine>
+    <enableEACForEveryonePref>true</enableEACForEveryonePref>
+    <enableEnforceEacSharingPref>true</enableEnforceEacSharingPref>
+    <enableInboxActivitySharing>true</enableInboxActivitySharing>
+    <enableInsightsInTimeline>false</enableInsightsInTimeline>
+    <enableInsightsInTimelineEacStd>true</enableInsightsInTimelineEacStd>
+    <provisionProductivityFeatures>false</provisionProductivityFeatures>
+    <s2XSvcAccEmail>false</s2XSvcAccEmail>
+    <salesforceEventsOnlyPref>true</salesforceEventsOnlyPref>
+    <sensitiveEmailFilter>false</sensitiveEmailFilter>
+    <showEACCalendarPref>true</showEACCalendarPref>
+    <syncInternalEvents>true</syncInternalEvents>
+</EACSettings>

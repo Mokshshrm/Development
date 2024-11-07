@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_employee</fullName>
+    <active>true</active>
+    <label>for_employee</label>
+    <picklistValues>
+        <picklist>abcd__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>c</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>d</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>f</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>g</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>i</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>j</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>k</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>l</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>p</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>q</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>r</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>u</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>v</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>w</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>x</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>z</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>country__c</picklist>
+        <values>
+            <fullName>INDIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>state__c</picklist>
+        <values>
+            <fullName>Andhra Pradesh %28Amaravati%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arunachal Pradesh %28Itanagar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assam %28Dispur%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bihar %28Patna%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chhattisgarh %28Raipur%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goa %28Panaji%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gujarat %28Gandhinagar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haryana %28Chandigarh%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Himachal Pradesh %28Shimla%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jharkhand %28Ranchi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karnataka %28Bangalore%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kerala %28Thiruvananthapuram%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madhya Pradesh %28Bhopal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maharashtra %28Mumbai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manipur %28Imphal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meghalaya %28Shillong%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mizoram %28Aizawl%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nagaland %28Kohima%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odisha %28Bhubaneshwar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjab %28Chandigarh%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajasthan %28Jaipur%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sikkim %28Gangtok%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil Nadu %28Chennai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telangana %28Hyderabad%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tripura %28Agartala%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uttar Pradesh %28Lucknow%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uttarakhand %28Dehradun%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Bengal %28Kolkata%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldRestrictionRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <classification>PersonalInfo_EPIM</classification>
+    <classificationType>FieldSet</classificationType>
+    <description>Field Restriction Rule for Guest PersonalInfo_EPIM</description>
+    <enforcementType>FieldRestrict</enforcementType>
+    <masterLabel>Rule5ea67f88300a4cbfab5cf892c77649129747e0f55a31ea0d007a1ee4097330ba</masterLabel>
+    <recordFilter>Id=&apos;NEVER_TRUE&apos;</recordFilter>
+    <targetEntity>User</targetEntity>
+    <userCriteria>CASE($User.UserType,&apos;Guest&apos;,1,0)=1</userCriteria>
+    <version>0</version>
+</FieldRestrictionRule>

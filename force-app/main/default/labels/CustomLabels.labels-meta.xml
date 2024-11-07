@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Bhai_Ka_Birthday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bhai Ka Birthday</shortDescription>
+        <value>Bhai Ka Birthday</value>
+    </labels>
+    <labels>
+        <fullName>Birthday_Greeting</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Birthday Greeting</shortDescription>
+        <value>Birthday Greeting</value>
+    </labels>
+    <labels>
+        <fullName>ContactPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ContactPage</shortDescription>
+        <value>Contact Page</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <categories>Account Default Description</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description</shortDescription>
+        <value>This is Default Description</value>
+    </labels>
+    <labels>
+        <fullName>SalesForceChatterGroujp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SalesForceChatterGroup</shortDescription>
+        <value>0F9dM0000009DR3SAM</value>
+    </labels>
+    <labels>
+        <fullName>newone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>newone</shortDescription>
+        <value>Prof.</value>
+    </labels>
+</CustomLabels>

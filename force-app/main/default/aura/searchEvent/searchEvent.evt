@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Event template" >
+    <aura:attribute name="keyword" type="String" default="" />
+    <aura:attribute name="IsEmpty" type="Boolean" default="false" />
+</aura:event>

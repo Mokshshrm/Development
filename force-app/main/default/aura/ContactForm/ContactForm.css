@@ -1,0 +1,42 @@
+.THIS {}
+
+.THIS .slds-form {
+    width: 100% !important;
+}
+
+.THIS .main-form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: auto;
+    gap: 20px;
+}
+
+.THIS .slds-input,
+.THIS .slds-select {
+    height: 40px !important;
+    width: 100% !important;
+}
+
+.THIS .input-section-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    column-gap: 8px;
+}
+
+.THIS .slds-form-element {
+    flex: 1;
+    height: 80px !important;
+}
+
+
+.THIS .form-title {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 0px;
+    color: rgb(141, 137, 137);
+    box-shadow: 0px 0px 1px rgb(184, 182, 182);
+    text-align: center;
+}

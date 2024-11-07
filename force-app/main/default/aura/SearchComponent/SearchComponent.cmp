@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId">
+    
+    <!-- Should be create cmponent based on it's name  -->
+     
+    <aura:registerEvent name="cmpEvent" type="c:searchEvent" />
+    
+    <div class="main__container">
+        <lightning:input name="Search" label="Search here ." type="text" placeholder="search" onchange="{!c.fireEvent}" />
+    </div>
+</aura:component>

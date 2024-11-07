@@ -1,0 +1,121 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,lightning:availableForFlowScreens,force:lightningQuickActionWithoutHeader"  controller="ContactListController" access="global"  >
+
+<!--     
+    <aura:handler name="init" action="{!c.handleInit}" value="{!this}" />
+
+    <aura:attribute name="first" type="Object"/>
+    <aura:attribute name="contactList" type="List" />
+
+
+    <span style="margin-right:30px;">{!v.first.name}</span>
+    <lightning:button onclick="{!c.btn}" label="component1" />
+    <hr />
+
+    <c:contact first="{!v.first}" />
+    <hr />
+
+    <lightning:select name="Select" label="contactList" >
+
+        <option value="null">None</option>
+        <aura:iteration items="{!v.contactList}" var="item">
+            <option value="{!item.Id}">{!item.Name}</option>
+        </aura:iteration> 
+        
+    </lightning:select>
+     -->
+    
+     
+     <!-- <aura:attribute name="recordId" type="Id" />
+     <aura:attribute name="Account" type="Account" />
+     <aura:attribute name="contactList" type="List" />
+     <aura:attribute name="mycolumns" type="List" />
+     
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
+     
+    <!-- <force:recordData aura:id="accountRecord"
+                      recordId="{!v.recordId}"
+                      fields="Name,Description,Phone,Industry"
+                      targetFields="{!v.Account}"
+                      layoutType="FULL" /> -->
+
+    <!-- <lightning:card variant="Narrow" title="Narrow Card Header" iconName="standard:account">
+        <lightning:datatable  data="{!v.contactList}" 
+        columns="{!v.mycolumns}"
+        keyField="ID"
+        hideCheckboxColumn="true"
+        onrowselection="{!c.getSelectedName}"  />
+    </lightning:card> -->
+
+    <!-- Creating Contact form  -->
+
+<!-- 
+    <aura:attribute name="street" type="String"/>
+    <aura:attribute name="city" type="String" />
+    <aura:attribute name="province" type="String"/>
+    <aura:attribute name="country" type="String" />
+    <aura:attribute name="postalCode" type="String" />
+    <aura:attribute name="provinceOptions" type="List" />
+    <aura:attribute name="countryOptions" type="List" default="[]"/>
+    <aura:attribute name="previousCountry" type="String"/> -->
+
+    <aura:attribute name="contact" type="Contact" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading-medium">Create Contact</h4>
+    </div>
+    <div class="slds-modal__content slds-p-around-x-small slds-align_absolute-center slds-size_1-of-1 slds-is-relative">
+        <form class="slds-form–stacked">
+        <div class="slds-p-around_medium">
+
+            <lightning:recordEditForm objectApiName="Contact" onsubmit="{!c.onFormSubmit}"  >
+            
+            <lightning:messages />
+                <div class="input-section-local">
+                    <lightning:input name="FirstName" value="{!v.contact.FirstName}" label="First Name" />
+                </div>
+                <div class="input-section-local">
+                    <lightning:input name="LastNme" value="{!v.contact.LastName}"  label="Last Name" required="true" />
+                    
+                </div>
+                <div class="input-section-local">
+                    <lightning:input name="Email" type="email" value="{!v.contact.Email}" label="Email" />
+
+                </div>
+                <div class="input-section-local">
+                    <lightning:input name="MobilePhone" value="{!v.contact.MobilePhone}" type="phone"  label="MobilePhone" />                            
+                </div>
+                <div>
+                    <lightning:inputAddress
+                        addressLabel="Address"
+                        streetLabel="Street"
+                        cityLabel="City"
+                        countryLabel="Country"
+                        provinceLabel="Province/State"
+                        postalCodeLabel="PostalCode"
+                        street="{! v.street }"
+                        city="{! v.city }"
+                        province="{! v.province }"
+                        country="{! v.country }"
+                        postalCode="{! v.postalCode }"
+                        countryOptions="{! v.countryOptions }"
+                        provinceOptions="{! v.provinceOptions }"
+                        onchange="{! c.updateProvinces }"
+                    />        
+                </div>
+            </lightning:recordEditForm>
+        </div> 
+    </form>
+    
+    
+</div>
+<div>
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1" >
+        <lightning:button variant="Brand" class="slds-button"   name="Submit" label="Submit" onclick="{!c.onFormSubmit}"/>
+        <lightning:button variant="Neutral" class="slds-button" name="Cancel" label="Cancel" onclick="{!c.onFormSubmit}"/>
+    </div> 
+</div>
+    
+</aura:component>

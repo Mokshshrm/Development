@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>bank-account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>bank-account</value>
+    </caseValues>
+    <layouts>
+        <layout>bank-account Layout</layout>
+        <sections>
+            <label><!-- Bank details --></label>
+            <section>Bank details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>for_employee_page</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>for_student_page_layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- InvokeScreenFlow --></label>
+        <name>InvokeFlow</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- for_employee --></label>
+        <name>for_employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- for_student --></label>
+        <name>for_student</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

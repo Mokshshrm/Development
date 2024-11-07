@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Selecet type of scholarship is applying for</description>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AP ePASS</fullName>
+                <default>false</default>
+                <label>AP ePASS</label>
+            </value>
+            <value>
+                <fullName>Bihar Scholarship</fullName>
+                <default>false</default>
+                <label>Bihar Scholarship</label>
+            </value>
+            <value>
+                <fullName>ePASS Karnataka</fullName>
+                <default>false</default>
+                <label>ePASS Karnataka</label>
+            </value>
+            <value>
+                <fullName>Goa Education Trust Scholarship</fullName>
+                <default>false</default>
+                <label>Goa Education Trust Scholarship</label>
+            </value>
+            <value>
+                <fullName>Himachal Pradesh Scholarship – HP ePASS Scholarship Portal</fullName>
+                <default>false</default>
+                <label>Himachal Pradesh Scholarship – HP ePASS Scholarship Portal</label>
+            </value>
+            <value>
+                <fullName>Jammu and Kashmir Scholarship – JK Scholarship also Known as PMSSS</fullName>
+                <default>false</default>
+                <label>Jammu and Kashmir Scholarship – JK Scholarship also Known as PMSSS</label>
+            </value>
+            <value>
+                <fullName>Kerala Scholarship – DCE Scholarship</fullName>
+                <default>false</default>
+                <label>Kerala Scholarship – DCE Scholarship</label>
+            </value>
+            <value>
+                <fullName>Madhya Pradesh Scholarship – MP Scholarship</fullName>
+                <default>false</default>
+                <label>Madhya Pradesh Scholarship – MP Scholarship</label>
+            </value>
+            <value>
+                <fullName>Maharashtra Scholarship – MahaDBT</fullName>
+                <default>false</default>
+                <label>Maharashtra Scholarship – MahaDBT</label>
+            </value>
+            <value>
+                <fullName>Odisha Scholarship</fullName>
+                <default>false</default>
+                <label>Odisha Scholarship</label>
+            </value>
+            <value>
+                <fullName>Punjab Scholarship</fullName>
+                <default>false</default>
+                <label>Punjab Scholarship</label>
+            </value>
+            <value>
+                <fullName>Rajasthan Scholarship</fullName>
+                <default>false</default>
+                <label>Rajasthan Scholarship</label>
+            </value>
+            <value>
+                <fullName>Sanskrit Scholarship – Delhi Scholarship</fullName>
+                <default>false</default>
+                <label>Sanskrit Scholarship – Delhi Scholarship</label>
+            </value>
+            <value>
+                <fullName>Telangana ePASS</fullName>
+                <default>false</default>
+                <label>Telangana ePASS</label>
+            </value>
+            <value>
+                <fullName>UP Scholarship 2023 – Uttara Pradesh Scholarship</fullName>
+                <default>false</default>
+                <label>UP Scholarship 2023 – Uttara Pradesh Scholarship</label>
+            </value>
+            <value>
+                <fullName>Uttarakhand Scholarship</fullName>
+                <default>false</default>
+                <label>Uttarakhand Scholarship</label>
+            </value>
+            <value>
+                <fullName>WBMDFC Scholarship</fullName>
+                <default>false</default>
+                <label>WBMDFC Scholarship</label>
+            </value>
+            <value>
+                <fullName>West Bengal Scholarship – WB Scholarship for OBC, SC, and ST Students</fullName>
+                <default>false</default>
+                <label>West Bengal Scholarship – WB Scholarship for OBC, SC, and ST Students</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,40 @@
+.THIS {
+    width: 100%;
+    height: 100%;
+}
+
+.THIS .slds-modal__footer {
+    display: grid !important;
+    grid-template-columns: repeat(2, auto) !important;
+    place-items: normal !important;
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: 0px 0px 2px 0px rgba(48, 46, 46, 0.517) !important;
+}
+.THIS .input-section-local{
+    width: 100%;
+}
+
+.THIS .slds-p-around-medium {
+    padding: 0rem !important;
+}
+
+.THIS .slds-modal__content {
+    overflow-y: hidden !important;
+    height: unset !important;
+    max-height: unset !important;
+}
+
+.THIS .cuf-content {
+    padding: 0 0rem !important;
+}
+
+.THIS .input-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.THIS .slds-modal__container {
+    width: 80% !important;
+}

@@ -1,0 +1,6 @@
+<!-- <apex:page standardController="Opportunity" extensions="ServiceCallout" action="{!CallFuture}">
+</apex:page> -->
+
+<apex:page >
+
+</apex:page>

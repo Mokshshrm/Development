@@ -1,0 +1,116 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Hom",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "1440px",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"0383a0ae-8b67-451e-9a87-c06f040a8818\",\"columns\":[{\"UUID\":\"c3f31e60-bbbe-4769-b43e-00d729ad7a43\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"f851cd16-3d86-47b3-98e5-98f651bb0091\",\"columnName\":\"Column 2\",\"columnKey\":\"0450d\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"788a9182-f177-42ea-acc9-a4041aec88be\",\"columnName\":\"Column 3\",\"columnKey\":\"a494a\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "fit" : "cover",
+                "height" : 50,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\",\"altText\":\"\",\"contentKey\":\"\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 100
+              },
+              "definition" : "dxp_base:image",
+              "id" : "6c0a264e-8b40-4a90-be36-d108cccf73e0",
+              "type" : "component"
+            } ],
+            "id" : "c3f31e60-bbbe-4769-b43e-00d729ad7a43",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "borderRadius" : "0px",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : "15px"
+                  }
+                },
+                "placeholderText" : "Search...",
+                "showSearchButton" : true
+              },
+              "definition" : "dxp_search:searchInput",
+              "id" : "baff58f7-7058-4f07-9fe6-0409aede295d",
+              "type" : "component"
+            } ],
+            "id" : "f851cd16-3d86-47b3-98e5-98f651bb0091",
+            "name" : "0450d",
+            "title" : "Column 2",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Button",
+                "type" : "primary",
+                "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__webPage\",\"attributes\":{\"url\":\"mailto:\"}}}}"
+              },
+              "definition" : "dxp_base:button",
+              "id" : "250e7991-83ab-4212-ac55-0552321062ac",
+              "type" : "component"
+            } ],
+            "id" : "788a9182-f177-42ea-acc9-a4041aec88be",
+            "name" : "a494a",
+            "title" : "Column 3",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0383a0ae-8b67-451e-9a87-c06f040a8818",
+          "type" : "component"
+        } ],
+        "id" : "ed360f63-8259-4399-9be6-582770cdf9fe",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Hom",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "6fd7d0f1-d297-4550-b1b5-470888306f4d",
+          "type" : "component"
+        } ],
+        "id" : "0336a663-c75d-47c3-8420-6611c9e7d313",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "88fc9ae1-5d57-46f9-9b9f-f850b027a2bd",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-home"
+  },
+  "urlName" : "hom"
+}

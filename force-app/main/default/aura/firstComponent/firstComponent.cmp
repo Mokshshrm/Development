@@ -1,0 +1,57 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId" controller="contactPaginationClass">
+
+    <!-- attributes -->
+    <aura:attribute name="recordId" type="Id" />
+
+    <aura:attribute name="data" type="Object" /> 
+    <aura:attribute name="columns" type="List" />
+
+    <aura:attribute name="recordSize" type="Integer" default="5" />
+    <aura:attribute name="pageNumber" type="Integer" default="0" />
+
+    <aura:attribute name="hideList" type="Boolean" default="false" />
+    
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+
+
+    <!-- <aura:handler event="force:refreshView" action="{!c.doInit}" /> -->
+    <aura:handler name="cmpEvent" event="c:searchEvent" action="{!c.handleSearch}" />
+
+
+
+    <!-- the container element determine the height of the datatable -->
+     <div class="main_container">
+        <div class="main_container_first">
+            <div class="search_component">
+                <c:SearchComponent />
+            </div>
+            <div class="records_select_container">
+                <span class="records_select_lable">Display Records : </span>
+                <lightning:select class="" name="pages" label=" " aura:id="records_select" onchange="{!c.showMoreRecords}" >
+                    <option value="5"> 5 </option>
+                    <option value="50"> 50 </option>
+                    <option value="100"> 100 </option>
+                </lightning:select>
+            </div>
+        </div>
+         <div class="main_container_second">
+             <div class="data-table-wrapper-container">
+                 <lightning:datatable
+                 keyField="id"
+                 data="{! v.data }"
+                 columns="{! v.columns }"
+                 hideCheckboxColumn="true"
+                 />
+                </div>
+                
+                <div class="button-inc-dec">
+                    <lightning:button onclick="{!c.decrease}" name="dec" label="prev" />
+                    <lightning:button onclick="{!c.increase}" name="inc" label="next" />
+                </div>
+            </div> 
+        </div>
+
+</aura:component>

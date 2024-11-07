@@ -1,0 +1,15 @@
+HIi {!Lead.FirstName} {!Lead.LastName},
+<br> </br>
+Welcom to MV Clouds. Our executive, {!Lead.OwnerFullName} will get back to you.
+<br></br>
+Thanks,
+<br></br>
+Regards,
+<br></br>
+Moksh Sharma
+<br></br>
+Salesforce Developer Intern, MV Clouds Private Limited
+<br></br>
+Email: mokshsharma1110@gmail.com
+<br></br>
+Website: www.mvclouds.com

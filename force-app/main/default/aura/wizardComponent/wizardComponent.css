@@ -1,0 +1,66 @@
+.THIS {}
+
+@keyframes identifiers {
+    0% {
+        transform: translateX(40px);
+    }
+
+    25% {
+        transform: translateX(-15px);
+
+    }
+
+    50% {
+        transform: translateX(-10px);
+
+    }
+
+    75% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        transform: translateX(-5px);
+
+    }
+}
+
+.THIS .cmp_main_container {
+    margin: 50px !important;
+    background-color: rgb(226, 183, 183);
+}
+
+.THIS .cmp_first_section {
+    margin-top: 50px !important;
+}
+
+.THIS .cmp_second_section {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+
+.THIS .cmp_third_section {
+    margin-top: 20px;
+}
+
+.THIS .cmp_btn-section {
+    width: fit-content;
+    margin: auto;
+}
+
+.THIS .cmp_btn {
+    display: inline;
+    background-color: transparent !important;
+    box-shadow: 0px 0px 2px rgb(58, 57, 57);
+}
+
+.THIS .cmp_btn-prev {
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.THIS .cmp_btn-next {
+    margin-right: 20px;
+}

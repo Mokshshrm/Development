@@ -1,0 +1,33 @@
+:host {}
+
+
+/* Over Writing Standard Css*/
+
+.wiz-menu-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+
+
+.reocrd-data-table-values {
+
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    margin: 5rem 1rem;
+    
+}
+
+
+
+
+
+.wiz-output-field {
+
+    flex: 1;
+    margin-left: 5rem;
+
+}

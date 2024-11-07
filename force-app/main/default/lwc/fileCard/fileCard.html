@@ -1,0 +1,35 @@
+<template>
+  <div class="slds-card">
+    <div class="slds-p-around_medium">
+      <div style="width: 20rem">
+        <div class="slds-file slds-file_card">
+          <figure>
+            <a href="#" class="slds-file__crop">
+              <span class="slds-assistive-text">Preview:</span>
+              <img src={thumbnailUrl} alt="Description of the image" />
+            </a>
+          </figure>
+          <div class="slds-file__title slds-file__title_scrim">
+            <div class="slds-file__actions-menu">
+              <div class="slds-button-group" role="group">
+                <button
+                  class="slds-button slds-button_icon slds-button_icon slds-button_icon-x-small slds-button_icon-inverse"
+                  title="Download"
+                >
+                  <span class="slds-assistive-text">Download</span>
+                </button>
+                <button
+                  class="slds-button slds-button_icon slds-button_icon slds-button_icon-x-small slds-button_icon-inverse"
+                  aria-haspopup="true"
+                  title="More Actions"
+                >
+                  <span class="slds-assistive-text">More Actions</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

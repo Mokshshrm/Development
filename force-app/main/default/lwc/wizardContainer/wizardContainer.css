@@ -1,0 +1,21 @@
+:host {
+    margin:50px
+}
+
+
+.wizard-container-footer {
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
+    justify-content: flex-end;
+    margin-top: 50px;
+    gap: 1rem;
+
+}
+.cmp-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 600px;
+    max-height: fit-content;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1minCalculationAfterCreated__c</fullName>
+    <description>calculating time after 1 min</description>
+    <formula>(NOW() + 0.00069444444)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>1minCalculationAfterCreated</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

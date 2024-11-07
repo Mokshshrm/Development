@@ -1,0 +1,47 @@
+<template>
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+        class="slds-modal slds-fade-in-open slds-modal_large">
+        <div class="slds-modal__container">
+            <div class="sldx-box sldxp overflowing-div">
+
+                <template for:each={actualData} for:item="it">
+                    <div key={it.id} class="slds-card main-iteration-container">
+                        <div class="slds-p-around_medium">
+                            <div class="divide-it">
+                                <div class="image-icon-on-cmp">
+                                    <lightning-icon icon-name="doctype:image"></lightning-icon>
+                                </div>
+                                <div class="image-name-on-cmp-dup"></div>
+                                <div class="image-name-on-cmp">
+                                    <div>
+                                        {it.name}
+                                    </div>
+                                    <div class="over-hidden-overview">
+                                        {it.name}
+                                    </div>
+                                </div>
+                                <div class="image-progressbar-on-cmp">
+                                    <lightning-progress-bar size="" value={it.value}></lightning-progress-bar>
+                                </div>
+                                <div class="image-status-on-cmp">
+                                    <template lwc:if={it.done}>
+                                        <lightning-icon icon-name="action:check"></lightning-icon>
+                                    </template>
+                                    <template lwc:elseif={it.pendingg}>
+                                        <lightning-icon icon-name="utility:spinner"></lightning-icon>
+                                    </template>
+                                    <template lwc:else>
+                                        <lightning-icon icon-name="action:close"></lightning-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <button name="button-ohkay" disabled onclick={ToggleModal} class="slds-button slds-button_brand">Okay</button>
+        </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</template>

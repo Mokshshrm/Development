@@ -1,0 +1,17 @@
+.THIS {}
+
+.THIS .cmp-preview-img-wrapper {
+    height: 600px;
+    width: 100%;
+}
+
+.THIS .cmp-preview-img-container {
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+}
+
+.THIS #image-main {
+    width: auto;
+    height: 100%;
+}

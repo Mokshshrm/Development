@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Student</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- new --></label>
+        <name>new</name>
+    </fieldSets>
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>Student_Created_Eail</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </webLinks>
+</CustomObjectTranslation>

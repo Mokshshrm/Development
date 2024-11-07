@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>mv_clouds_mobile</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>bank_account__c</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>Student__c</tabs>
+    <tabs>SignUpPage</tabs>
+    <tabs>CustomObjectUrlRedirect__c</tabs>
+    <tabs>Error_Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>mv_clouds_mobile_UtilityBar</utilityBar>
+</CustomApplication>

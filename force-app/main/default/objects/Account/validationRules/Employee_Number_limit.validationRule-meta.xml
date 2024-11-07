@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Number_limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+   NumberOfEmployees &gt;= 200
+)</errorConditionFormula>
+    <errorDisplayField>NumberOfEmployees</errorDisplayField>
+    <errorMessage>Error Message</errorMessage>
+</ValidationRule>

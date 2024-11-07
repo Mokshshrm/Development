@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+
+    <aura:attribute name="cssObj" type="Object" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- <aura:method name="UpdateCss" action="{!c.updateCss}" access="public">
+        <aura:attribute name="param" type="Map"  />
+    </aura:method> -->
+
+    <div id="background-boxx" class="slds-box">
+        <div class="cmp-img-container-wrapper"> 
+            <div class="cmp-img-container">
+                <img src="{!v.cssObj.imgUrl}" class="img-tag" id="img-tag" alt="Write down up there values"></img>
+            </div>
+        </div>
+        <div class="slds-box">
+            <div class="cmp-img-description" id="cmp-img-description">
+                {!v.cssObj.description}
+            </div>
+        </div>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,20 @@
+<template>
+  <div>
+    <div>
+      <c-image-lwc-uploader
+        ontoggleimageuploader={ToggleModal}
+      ></c-image-lwc-uploader>
+    </div>
+    <div>
+      <c-image-previewer-lwc record-id={recordId}></c-image-previewer-lwc>
+    </div>
+  </div>
+
+  <template if:true={isModalOpen}>
+    <c-file-upload-mechanism
+      record-id={recordId}
+      files={filesOnParent}
+      ontoggleimageuploader={ToggleModal}
+    ></c-file-upload-mechanism>
+  </template>
+</template>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>CreateRelatedTask</fullName>
+        <actions>
+            <name>CheckoutFast</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <formula>BEGINS( AccountNumber , &apos;100&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>ApprovalProcessSubmited</fullName>
+        <assignedTo>mokshsharma1110@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>dafadf</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>ApprovalProcessSubmited</subject>
+    </tasks>
+    <tasks>
+        <fullName>CheckoutFast</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>fatafat</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Checkout</subject>
+    </tasks>
+</Workflow>

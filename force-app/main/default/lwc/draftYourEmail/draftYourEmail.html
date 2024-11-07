@@ -1,0 +1,24 @@
+<template>
+
+    <div class="email-draft-wrapper sldx-box">
+        <div class="email-draft-container">
+            <lightning-card title="Send Email">
+                <div class="slds-p-around_medium">
+                    <div>
+                        <lightning-input class="custom-lable" label="From" type="email" data-name="from"
+                            value={fromEmail} onchange={handleToFromChange}></lightning-input>
+                    </div>
+                    <div>
+                        <lightning-input class="custom-lable" label="Subject" type="text" data-name="subject"
+                            value={subject} onchange={handleSubjectChange}></lightning-input>
+                    </div>
+                    <div class="rich-text-container">
+                        <lightning-input-rich-text value={emailBody}>
+                        </lightning-input-rich-text>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+
+</template>

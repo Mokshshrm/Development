@@ -1,0 +1,87 @@
+<aura:component
+  implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,lightning:availableForFlowScreens,force:lightningQuickActionWithoutHeader"
+  controller="CreateDocument"
+  access="global"
+>
+  <!-- <aura:attribute name="cmp_list" type="Map" default="{first:false,second:false,third:false}" /> -->
+
+  <ltng:require styles="{!$Resource.Quickactionmodal}" />
+
+  <aura:attribute name="cmp_no" type="Integer" default="1" />
+
+  <aura:attribute name="var_first" type="Boolean" default="true" />
+  <aura:attribute name="var_second" type="Boolean" default="false" />
+  <aura:attribute name="var_third" type="Boolean" default="false" />
+
+  <aura:attribute name="prev" type="Boolean" default="true" />
+  <aura:attribute name="next" type="Boolean" default="true" />
+
+  <aura:attribute name="progress_value" type="Integer" default="0" />
+
+  <aura:attribute name="accData" type="Object" />
+  <aura:attribute name="conData" type="Object" />
+  <aura:attribute name="eveData" type="Object" />
+
+  <!-- Guessing if it work then no harm 🤡 -->
+  <aura:handler event="c:FlowingDataFromWizard" action="{!c.handleFormData}" />
+  <!-- jkfada ;sdiadjfas; addfkaj -->
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <div class="cmp_main_container">
+    <div class="cmp_first_section">
+      <lightning:progressBar value="{!v.progress_value}" size="larger" />
+    </div>
+
+    <div class="cmp_second_section">
+      <aura:if isTrue="{!v.var_first}">
+        <c:AccountForm aura:id="component1" accData="{#v.accData}" />
+      </aura:if>
+
+      <aura:if isTrue="{!v.var_second}">
+        <c:ContactForm aura:id="component2" conData="{#v.conData}" />
+      </aura:if>
+
+      <aura:if isTrue="{!v.var_third}">
+        <c:EventForm aura:id="component3" eveData="{#v.eveData}" />
+      </aura:if>
+    </div>
+
+    <div class="cmp_third_section cmp_footer">
+      <div class="cmp_btn-section">
+        <div class="cmp_btn-prev cmp_btn">
+          <lightning:button
+            disabled="{!v.prev}"
+            label="Prev"
+            onclick="{!c.prev}"
+            name="prev"
+            variant="Brand"
+          />
+        </div>
+
+        <aura:if isTrue="{!v.next}">
+          <div class="cmp_btn-next cmp_btn">
+            <lightning:button
+              label="Next"
+              onclick="{!c.next}"
+              name="next"
+              variant="Brand"
+            />
+          </div>
+
+          <aura:set attribute="else">
+            <div class="cmp_btn-next cmp_btn">
+              <lightning:button
+                aura:id="save-btn"
+                label="Save"
+                onclick="{!c.next}"
+                name="save"
+                variant="Brand"
+              />
+            </div>
+          </aura:set>
+        </aura:if>
+      </div>
+    </div>
+  </div>
+</aura:component>

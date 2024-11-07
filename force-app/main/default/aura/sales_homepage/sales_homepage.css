@@ -1,0 +1,13 @@
+.THIS {}
+
+.THIS .image-cmp-wrapper {
+    margin-top: 20px;
+}
+
+.THIS .input-section-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    column-gap: 8px;
+}

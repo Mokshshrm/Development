@@ -1,0 +1,10 @@
+<template>
+  <template for:each={opportunityList} for:item="it">
+    <lightning-card
+      key={it.Id}
+      title={it.Name}
+      icon-name="standard:opportunity"
+    >
+    </lightning-card>
+  </template>
+</template>

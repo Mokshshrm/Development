@@ -1,0 +1,53 @@
+<template>
+  <div class="slds_box">
+    <lightning-record-edit-form object-api-name="Contact">
+      <lightning-input
+        type="text"
+        value={LastNameVal}
+        data-name={fieldApiName.LastName}
+        label="Last Name"
+        required="true"
+        onchange={handleOnchange}
+      >
+      </lightning-input>
+
+      <lightning-input
+        type="text"
+        data-name={fieldApiName.FirstName}
+        label="First Name"
+        value={FirstNameVal}
+        onchange={handleOnchange}
+      >
+      </lightning-input>
+
+      <lightning-input
+        type="date"
+        data-name={fieldApiName.Birthdate}
+        label="Birth Date"
+        value={BirthdateVal}
+        onchange={handleOnchange}
+      >
+      </lightning-input>
+
+      <lightning-input
+        type="email"
+        data-name={fieldApiName.Email}
+        label="Email"
+        value={EmailVal}
+        onchange={handleOnchange}
+      >
+      </lightning-input>
+
+      <lightning-input
+        type="tel"
+        data-name={fieldApiName.HomePhone}
+        label="Home Phone"
+        value={HomePhoneVal}
+        onchange={handleOnchange}
+      >
+      </lightning-input>
+
+      <lightning-button onclick={CallApex} label="Submit"> </lightning-button>
+    </lightning-record-edit-form>
+  </div>
+</template>

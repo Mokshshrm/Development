@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>mokshsharma1110@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mokshsharma1110@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>custom assignment rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>dd@gmail.co</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>(ISPICKVAL(LeadSource,&apos;Website&apos;) || ISPICKVAL (LeadSource,&apos;Open&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>employee_queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(ISPICKVAL( LeadSource , &apos;Web&apos;) ||
+ISPICKVAL( LeadSource , &apos;DigitalMarketing&apos;)  ||
+ISPICKVAL( LeadSource , &apos;Partner Referral&apos;))</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_after_1_min_when_Opportnity_is_created</fullName>
+        <description>Email after 1 min when Opportnity is created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Welcome</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_after_5_min</fullName>
+        <description>Email alert after 5 min</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Welcome</template>
+    </alerts>
+    <alerts>
+        <fullName>SendEmailToSalesTeam</fullName>
+        <description>send Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dd@gmail.co</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>idhfaiofjdisafujadsf@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>makabharosha911@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mokshsharma1110@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Lead_Welcom</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Emaildadjfajflakjf</fullName>
+        <description>Send Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <recipient>mokshsharma1110@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Welcome</template>
+    </alerts>
+    <alerts>
+        <fullName>changeProspecting</fullName>
+        <description>changeProspecting</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Welcome</template>
+    </alerts>
+    <alerts>
+        <fullName>send_Email</fullName>
+        <description>send Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mokshsharma1110@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Lead_Welcom</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>account</fullName>
+        <field>Type</field>
+        <literalValue>Installation Partner</literalValue>
+        <name>account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_account_type</fullName>
+        <field>Type</field>
+        <literalValue>Customer - Direct</literalValue>
+        <name>update account type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Opportunity WorkFlow</fullName>
+        <actions>
+            <name>Validate_Opportunity</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <formula>BEGINS( Account.AccountNumber, &apos;100&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>account</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Rules</fullName>
+        <actions>
+            <name>changeProspecting</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>OR(ISPICKVAL(StageName,&apos;Prospecting&apos;),ISPICKVAL(PRIORVALUE(StageName),&apos;Qualification&apos; ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Stage Close_won</fullName>
+        <active>false</active>
+        <formula>AND(
+    ISPICKVAL( StageName , &apos;Closed Won&apos;), 
+    NOT(ISPICKVAL(Account.Type,&apos;Customer - Direct&apos;))
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>update_account_type</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>assigned-to-sales</fullName>
+        <actions>
+            <name>SendEmailToSalesTeam</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Validate_Opportunity</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Validate Opportunity</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Validate Opportunity</subject>
+    </tasks>
+</Workflow>

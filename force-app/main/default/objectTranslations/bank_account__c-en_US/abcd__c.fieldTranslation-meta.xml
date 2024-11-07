@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- abcd --></label>
+    <name>abcd__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a</masterLabel>
+        <translation><!-- a --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>b</masterLabel>
+        <translation><!-- b --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>c</masterLabel>
+        <translation><!-- c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>d</masterLabel>
+        <translation><!-- d --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>e</masterLabel>
+        <translation><!-- e --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>f</masterLabel>
+        <translation><!-- f --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>g</masterLabel>
+        <translation><!-- g --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>h</masterLabel>
+        <translation><!-- h --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>i</masterLabel>
+        <translation><!-- i --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>j</masterLabel>
+        <translation><!-- j --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>k</masterLabel>
+        <translation><!-- k --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>l</masterLabel>
+        <translation><!-- l --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>m</masterLabel>
+        <translation><!-- m --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>n</masterLabel>
+        <translation><!-- n --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>p</masterLabel>
+        <translation><!-- p --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>q</masterLabel>
+        <translation><!-- q --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>r</masterLabel>
+        <translation><!-- r --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>s</masterLabel>
+        <translation><!-- s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>t</masterLabel>
+        <translation><!-- t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>u</masterLabel>
+        <translation><!-- u --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>v</masterLabel>
+        <translation><!-- v --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>w</masterLabel>
+        <translation><!-- w --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>x</masterLabel>
+        <translation><!-- x --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>y</masterLabel>
+        <translation><!-- y --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>z</masterLabel>
+        <translation><!-- z --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

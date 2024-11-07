@@ -1,0 +1,18 @@
+<template>
+  <div class="wiz-menu-item-container">
+    <div class="wiz-menu-item">
+      <lightning-select name="AccountRecords" label="AccountRecords" value={value} options={option}
+        onchange={showSelection} required>
+      </lightning-select>
+    </div>
+    <div class="wiz-output-field">
+      <lightning-formatted-text value={selectedValue}></lightning-formatted-text>
+    </div>
+  </div>
+  <div class="sfdx-box reocrd-data-table-values">
+    <lightning-datatable key-field="id" data={data_table_data} columns={data_table_column}
+      onrowselection={handleRowAction}>
+      ></lightning-datatable>
+      
+  </div>
+</template>

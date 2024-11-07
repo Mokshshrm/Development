@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Hom",
+  "contentBody" : {
+    "activeViewId" : "Hom",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-home",
+    "urlPrefix" : "Home"
+  },
+  "urlName" : "hom"
+}

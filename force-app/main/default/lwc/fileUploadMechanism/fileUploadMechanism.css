@@ -1,0 +1,67 @@
+:host {
+}
+
+.slds-modal__container {
+  width: 50% !important;
+}
+
+.divide-it {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-iteration-container {
+  height: 90px;
+}
+.image-name-on-cmp {
+  width: 90px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  margin: 0px 5px;
+}
+
+/* .image-name-on-cmp:hover+.image-name-on-cmp-dup {
+    width: 10rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis; }
+
+*/
+.over-hidden-overview {
+  display: none;
+}
+
+/* .image-name-on-cmp:hover+.over-hidden-overview {
+    display: inline;
+    z-index: 10;
+} */
+
+.image-icon-on-cmp {
+  width: 2rem;
+}
+
+.image-progressbar-on-cmp {
+  width: 100%;
+  height: 1rem;
+}
+
+.image-status-on-cmp {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  min-width: 50px;
+  max-height: 50px;
+}
+
+.overflowing-div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

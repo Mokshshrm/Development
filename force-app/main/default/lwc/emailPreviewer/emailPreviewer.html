@@ -1,0 +1,59 @@
+<template>
+
+    <div class="email-draft-container">
+        <lightning-card title="Email Preview">
+            <div class="slds-p-around_medium">
+
+                <!-- <div class="from-email-div section-email">
+                    <div class="Lable slds-noflex">
+                        <label class="slds-form-element__label">From</label>
+                    </div>
+                    <div>
+                        <lightning-formatted-email class="format-text"
+                            value={emailObj.fromEmail}></lightning-formatted-email>
+                    </div>
+                </div>
+                <div class="from-subject-div section-email">
+                    <div class="Lable slds-noflex">
+                        <label class="slds-form-element__label">Subject</label>
+                    </div>
+                    <div>
+                        <lightning-formatted-text class="format-text"
+                            value={emailObj.subject}></lightning-formatted-text>
+                    </div>
+                </div>
+                <div class="from-email-body-div section-email">
+                    <div class="Lable slds-noflex">
+                        <label class="slds-form-element__label">Email Body</label>
+                    </div>
+                    <div>
+
+                        <lightning-formatted-rich-text class="format-text"
+                            value={emailObj.emailBody}></lightning-formatted-rich-text>
+                    </div>
+                </div> -->
+
+                <div class="slds-noflex">
+                    <label class="custom-label slds-form-element__label">Subject</label>
+                </div>
+                <div class="from-subject-div section-email slds-box">
+                    <div>
+                        <lightning-formatted-text class="format-text"
+                            value={emailObj.subject}></lightning-formatted-text>
+                    </div>
+                </div>
+                <div class="slds-noflex">
+                    <label class="custom-label slds-form-element__label">Email Body</label>
+                </div>
+                <div class="from-email-body-div section-email slds-box">
+                    <div>
+                        <lightning-formatted-rich-text class="format-text"
+                            value={emailObj.emailBody}></lightning-formatted-rich-text>
+                    </div>
+                </div>
+
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

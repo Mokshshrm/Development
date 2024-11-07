@@ -1,0 +1,42 @@
+.THIS {}
+
+.THIS .data-table-wrapper-container {
+    width: 100%;
+    min-height: 185px;
+}
+
+.THIS .slds-cell-fixed .slds-has-button-menu {
+    width: 100% !important;
+}
+
+.THIS .main_container_first {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.THIS .search_component {
+    display: flex;
+    flex: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.THIS .records_select_container {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.THIS .records_select_lable {}
+
+.THIS .slds-form-element {
+    display: flex;
+}

@@ -1,0 +1,78 @@
+<aura:component>
+  <aura:attribute name="conData" type="Object" />
+
+  <aura:registerEvent
+    name="sendcontacttoParent"
+    type="c:FlowingDataFromWizard"
+  />
+
+  <aura:method name="getData" access="Public" action="{!c.handleFormData}">
+    <aura:attribute name="isPrev" type="Boolean" />
+  </aura:method>
+
+  <lightning:recordEditForm objectApiName="Contact">
+    <div class="form-title">New Contact</div>
+
+    <div class="main-form-container">
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.FirstNa7me}"
+          aura:id="input-FirstName"
+          type="text"
+          name="FirstName"
+          label="FirstName"
+          placeholder="firstname"
+        />
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.LastName}"
+          aura:id="input-LastName"
+          type="text"
+          name="LastName"
+          required="true"
+          label="LastName"
+          placeholder="lastname"
+        />
+      </div>
+
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.Phone}"
+          aura:id="input-Phone"
+          type="tel"
+          name="Phone"
+          label="Phone"
+        />
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.Email}"
+          aura:id="input-Email"
+          type="email"
+          name="Email"
+          label="Email"
+        />
+      </div>
+
+      <div class="input-section-div">
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.Title}"
+          aura:id="input-Title"
+          type="text"
+          name="Title"
+          label="Title"
+        />
+        <lightning:input
+          onchange="{!c.updatevalidity}"
+          value="{#v.conData.Birthdate}"
+          aura:id="input-Birthdate"
+          type="date"
+          name="Birthdate"
+          label="Birthdate"
+        />
+      </div>
+    </div>
+  </lightning:recordEditForm>
+</aura:component>
